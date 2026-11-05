@@ -1,193 +1,199 @@
 # Soulan Docs
 
-**Uma solução para apoiar e padronizar a elaboração de documentos de Atração e Seleção com o auxílio da tecnologia e da inteligência artificial.**
+**Uma solução digital para otimizar, organizar e padronizar a elaboração de documentos de Atração e Seleção.**
 
-O Soulan Docs é um projeto desenvolvido com o objetivo de facilitar a rotina dos profissionais de Atração e Seleção, reduzindo o trabalho manual na organização de informações e na elaboração de documentos utilizados nos processos seletivos.
+O **Soulan Docs** é uma aplicação desenvolvida para facilitar a rotina dos profissionais de Atração e Seleção, tornando a preparação de documentos mais organizada, padronizada e eficiente.
 
-A proposta é centralizar a preparação dos documentos em um fluxo orientado, no qual as informações fornecidas pelo consultor são organizadas conforme modelos e regras previamente definidos, mantendo a necessidade de revisão e validação humana.
+A solução reúne fluxos de preenchimento, organização de informações, revisão e preparação de documentos, utilizando regras de negócio específicas para cada modelo documental.
+
+Seu propósito é reduzir atividades manuais, minimizar inconsistências e proporcionar mais agilidade aos consultores, mantendo a validação humana como parte essencial do processo.
 
 ---
 
 ## Demonstração do projeto
 
-Assista à demonstração do Soulan Docs e conheça a proposta, a interface e o fluxo de utilização do protótipo.
+Conheça o Soulan Docs na prática e acompanhe seu funcionamento, desde a seleção do documento até a revisão e preparação do resultado final.
 
-**[ASSISTIR AO VÍDEO DEMONSTRATIVO](INSERIR_LINK_DO_VIDEO)**
-
-> A demonstração apresenta o protótipo em desenvolvimento. As funcionalidades exibidas devem ser consideradas conforme o estágio atual de implementação do projeto.
+**[▶ ASSISTIR AO VÍDEO DEMONSTRATIVO](INSERIR_LINK_PUBLICO_DO_VIDEO)**
 
 ---
 
 ## O problema que o projeto busca resolver
 
-A elaboração de documentos de Atração e Seleção pode envolver diferentes fontes de informação, como currículos, briefings, e-mails, anotações de entrevistas e informações compartilhadas em reuniões.
+A elaboração de documentos de Atração e Seleção envolve diferentes fontes de informação, como currículos, briefings, e-mails, anotações de entrevistas e informações compartilhadas em reuniões.
 
-Organizar esses dados manualmente, identificar quais informações pertencem a cada campo e manter um padrão entre os documentos pode demandar tempo e gerar inconsistências.
+A organização manual desses conteúdos pode demandar tempo, gerar retrabalho e dificultar a manutenção de um padrão entre os documentos.
 
-O Soulan Docs foi idealizado para apoiar esse processo, utilizando uma estrutura padronizada e regras de negócio que orientam a organização, a revisão e a preparação dos documentos.
+O Soulan Docs foi desenvolvido para apoiar esse processo, oferecendo uma experiência orientada por etapas e regras específicas para cada tipo de documento.
 
-## Objetivo
+## Objetivos da solução
 
-Desenvolver uma ferramenta de apoio à produção documental de Atração e Seleção, com foco em:
-
-- Reduzir o trabalho manual de organização das informações.
-- Padronizar a estrutura dos documentos.
-- Facilitar a identificação de informações ausentes.
-- Sinalizar divergências entre diferentes fontes.
-- Preservar a necessidade de validação pelo consultor.
-- Apoiar a geração de documentos nos formatos Word e PDF.
-- Manter regras de negócio e critérios de qualidade definidos para cada modelo.
+- Reduzir o trabalho manual na preparação de documentos.
+- Padronizar a estrutura e a organização das informações.
+- Facilitar a identificação de dados ausentes.
+- Identificar possíveis divergências entre diferentes fontes.
+- Orientar a revisão e a validação das informações.
+- Apoiar a preparação de documentos nos formatos Word e PDF.
+- Preservar os padrões documentais e as regras de negócio estabelecidas.
 
 ---
 
 ## Documentos contemplados
 
-O escopo do projeto considera quatro modelos documentais:
+A solução contempla quatro categorias de documentos:
 
 | Código | Documento |
-|---|---|
+|:---:|---|
 | AV | Formulário de Abertura de Vaga |
 | CV | Currículo Padrão Soulan |
 | CR | Currículo + Relatório de Entrevista |
 | PE | Parecer de Entrevista — Vagas Estratégicas |
 
-Cada modelo possui uma estrutura e regras próprias de preenchimento.
+Cada categoria possui estrutura, campos e critérios próprios de organização e revisão.
 
-## Como funciona a proposta
+## Como funciona
 
-O fluxo planejado para utilização do Soulan Docs é composto pelas seguintes etapas:
+O Soulan Docs organiza o processo em seis etapas:
 
-1. **Seleção do documento:** o usuário escolhe qual documento deseja preparar.
-2. **Envio das informações:** são fornecidos textos, currículos, briefings, anotações ou arquivos de apoio.
-3. **Organização dos dados:** as informações são distribuídas conforme a estrutura do documento selecionado.
-4. **Revisão:** o usuário visualiza o conteúdo organizado, as informações pendentes e possíveis divergências.
-5. **Validação:** o consultor revisa e confirma as informações.
-6. **Finalização:** o documento pode ser preparado para exportação nos formatos previstos.
+1. **Seleção do documento:** escolha do modelo que será preparado.
+2. **Envio das informações:** inclusão de textos, currículos, briefings, anotações e arquivos de apoio.
+3. **Organização dos dados:** distribuição das informações conforme a estrutura do documento selecionado.
+4. **Revisão:** visualização do conteúdo organizado, dos dados pendentes e das possíveis divergências.
+5. **Validação:** conferência e confirmação das informações pelo consultor.
+6. **Finalização:** preparação do documento para utilização e exportação nos formatos previstos.
 
-O projeto estabelece como regra fundamental que informações não fornecidas não devem ser inventadas. Dados ausentes ou divergentes precisam ser identificados para validação humana.
+### Princípios de funcionamento
+
+- **Fidelidade às fontes:** nenhuma informação deve ser inventada para completar campos.
+- **Identificação de pendências:** dados ausentes são sinalizados para validação.
+- **Tratamento de divergências:** informações conflitantes devem ser apresentadas para conferência.
+- **Validação humana:** o consultor mantém a responsabilidade pela revisão e confirmação do conteúdo.
+- **Padronização:** cada documento segue sua estrutura e suas regras específicas.
 
 ---
 
 ## Tecnologias utilizadas
 
-A arquitetura do projeto foi organizada em duas partes principais:
+A aplicação foi estruturada com tecnologias voltadas ao desenvolvimento de interfaces web e serviços de backend.
 
 ### Frontend
-- React
-- TypeScript
-
-Responsável pela interface de interação, navegação e apresentação das etapas do processo.
+- **React:** construção da interface.
+- **TypeScript:** tipagem e organização do código.
 
 ### Backend
-- Python
-- FastAPI
+- **Python:** desenvolvimento da lógica de aplicação.
+- **FastAPI:** estruturação dos serviços e endpoints.
 
-Responsável pela estrutura do backend e pela organização das regras de negócio.
-
-### Testes e documentação
+### Engenharia e qualidade
 - Testes automatizados.
+- Separação de responsabilidades.
+- Organização das regras de domínio.
 - Dados fictícios para validação.
-- Documentação de requisitos e decisões.
-- Histórico de alterações do projeto.
+- Controle de versão com Git e GitHub.
+- Documentação funcional e técnica.
 
 ---
 
-## Arquitetura e organização
+## Arquitetura e desenvolvimento
 
-O projeto possui uma separação entre interface, backend, regras de domínio, testes e documentação.
+O Soulan Docs foi concebido com uma arquitetura que separa a interface, os serviços de backend e as regras de negócio.
 
-Principais diretórios:
+Essa organização permite manter responsabilidades bem definidas, facilitar a manutenção e apoiar a evolução das funcionalidades.
 
-- `frontend/`: interface do usuário.
-- `backend/`: aplicação e regras do backend.
-- `backend/app/dominio/`: camada de regras de negócio.
-- `tests/`: testes automatizados.
-- `test_data/`: dados fictícios utilizados nos testes.
-- `assets/`: recursos não corporativos utilizados no projeto.
-- `docs/`: documentação funcional e técnica.
-- `historico_alteracoes/`: registros de evolução e decisões.
-- `scripts/`: scripts auxiliares.
+O desenvolvimento considera aspectos como:
+
+- Organização modular da aplicação.
+- Separação entre interface e lógica de negócio.
+- Estruturação das regras específicas de cada documento.
+- Validação das informações durante o fluxo.
+- Preparação dos documentos para exportação.
+- Testes e verificação dos comportamentos esperados.
 
 ---
 
 ## Documentação do projeto
 
-A documentação acompanha a evolução do Soulan Docs e registra as decisões que orientam seu desenvolvimento.
+A documentação foi uma parte importante do desenvolvimento do Soulan Docs, orientando as definições funcionais, técnicas e visuais da solução.
 
-Ela contempla:
+Durante o projeto, foram estruturados materiais de referência para registrar as necessidades identificadas, as decisões tomadas e os critérios que orientam o funcionamento da aplicação.
 
-- Análise e especificação dos requisitos.
-- Definição das funcionalidades e regras de negócio.
-- Arquitetura e organização técnica.
-- Experiência do usuário e interface (UX/UI).
-- Wireframes e referências de telas.
-- Estrutura dos modelos documentais.
-- Regras de preenchimento, pendências e divergências.
-- Segurança e tratamento dos conteúdos corporativos.
-- Orientações para execução dos testes.
-- Histórico de alterações e decisões.
+Entre os principais temas documentados estão:
 
-A documentação pode ser consultada no diretório [`docs/`](docs/), juntamente com os guias e materiais de apoio disponíveis no repositório.
+**Análise e requisitos**
+- Levantamento das necessidades.
+- Definição do escopo.
+- Requisitos funcionais e não funcionais.
+- Especificações das funcionalidades.
 
----
+**Regras de negócio**
+- Regras específicas para cada modelo documental.
+- Identificação e tratamento de informações ausentes.
+- Tratamento de divergências.
+- Critérios de validação e confirmação.
+- Regras para revisão e finalização.
 
-## Status atual do projeto
+**Arquitetura técnica**
+- Organização do frontend e backend.
+- Separação das responsabilidades.
+- Estrutura das camadas e módulos.
+- Organização das regras de domínio.
 
-**Status: protótipo em desenvolvimento.**
+**UX/UI — Experiência e interface**
+- Fluxos de navegação.
+- Estrutura das telas.
+- Componentes visuais.
+- Wireframes e referências de interface.
+- Decisões de usabilidade e padronização visual.
 
-O projeto já possui uma estrutura de frontend e backend, regras de domínio, testes automatizados, controles de segurança e recursos de navegação, incluindo o menu "Como usar".
+**Modelos documentais**
+- Mapeamento dos quatro documentos.
+- Estrutura dos campos.
+- Critérios de preenchimento.
+- Regras de organização das informações.
 
-A geração de documentos Word e PDF a partir do conteúdo revisado também foi testada no protótipo.
+**Segurança e privacidade**
+- Orientações para proteção de dados.
+- Separação de materiais corporativos.
+- Cuidados com arquivos e configurações sensíveis.
+- Diretrizes relacionadas à LGPD.
 
-Algumas funcionalidades ainda estão em desenvolvimento ou aguardam validação:
+**Testes e validação**
+- Cenários de teste.
+- Dados fictícios.
+- Verificação das regras de negócio.
+- Critérios de qualidade.
 
-- Integração com uma inteligência artificial real.
-- Interpretação automática de textos livres e arquivos.
-- Integração e validação de um modelo de IA local.
-- Validação completa do fluxo de ponta a ponta.
-- Preparação para implantação em ambiente de produção.
-- Etapas adicionais de segurança e conformidade com a LGPD antes da utilização de dados reais.
+**Histórico de alterações**
+- Registro das decisões.
+- Evolução dos requisitos.
+- Alterações implementadas.
+- Controle das versões do projeto.
 
-O simulador utilizado nos testes atuais não representa uma integração de IA real: ele utiliza um comando específico de simulação para executar determinados preenchimentos demonstrativos.
-
-Portanto, o projeto ainda não deve ser considerado uma solução pronta para utilização em produção.
-
----
-
-## Segurança, privacidade e dados
-
-O desenvolvimento e os testes devem utilizar exclusivamente dados fictícios.
-
-Por questões de confidencialidade e segurança, materiais corporativos, modelos oficiais, logomarcas, documentos internos, credenciais, arquivos de configuração sensíveis e dados pessoais não devem ser publicados indevidamente no repositório.
-
-O projeto possui orientações específicas sobre os conteúdos corporativos que ficam fora do versionamento.
-
-Consulte também o arquivo `CONTEUDO_CORPORATIVO.md`.
-
----
-
-## Testes
-
-O projeto possui testes automatizados voltados à validação das regras de domínio e do comportamento esperado.
-
-As orientações para execução estão disponíveis em:
-
-[`docs/guias/executar_testes.md`](docs/guias/executar_testes.md)
-
-Os resultados dos testes devem ser considerados de acordo com a versão do código e o ambiente utilizado.
+A documentação serviu como referência durante o desenvolvimento, contribuindo para manter a coerência entre os requisitos, as regras de negócio, a experiência do usuário e a implementação técnica.
 
 ---
 
-## Licenças e utilização
+## Segurança, privacidade e proteção de dados
 
-As informações sobre licenças e recursos utilizados estão documentadas em [`LICENCAS.md`](LICENCAS.md).
+A organização do projeto considera a importância da confidencialidade das informações utilizadas nos processos de Atração e Seleção.
 
-A publicação do código não concede autorização automática para reutilização de marcas, documentos, modelos ou materiais corporativos da Soulan.
+As diretrizes consideradas incluem:
+
+- Utilização de dados fictícios nos testes e demonstrações.
+- Proteção de credenciais e variáveis de ambiente.
+- Não exposição indevida de documentos internos.
+- Cuidados com informações pessoais de candidatos.
+- Separação entre código-fonte e materiais corporativos.
+- Consideração dos requisitos de segurança e LGPD.
+
+O material disponibilizado publicamente foi limitado ao conteúdo autorizado para divulgação, preservando informações e documentos internos.
 
 ---
 
 ## Considerações finais
 
-O Soulan Docs é um projeto em desenvolvimento que busca aproximar tecnologia, padronização e inteligência artificial das atividades de Atração e Seleção.
+O Soulan Docs representa a aplicação da tecnologia à rotina de Atração e Seleção, com foco na padronização, organização das informações e melhoria dos processos documentais.
 
-Mais do que preparar documentos, a proposta é estruturar um processo que facilite o trabalho dos consultores, preserve a qualidade das informações e mantenha a validação humana como parte essencial da entrega.
+Sua proposta reúne interface, regras de negócio, documentação e mecanismos de validação, formando uma solução orientada à produtividade e à qualidade das entregas.
+
+**Soulan Docs — Mais organização, padronização e eficiência na produção de documentos.**
